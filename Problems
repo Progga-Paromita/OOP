@@ -1,1 +1,148 @@
 Random Problems in C++
+
+1.
+Print if the input is upercase or lower case.
+code:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char ch;
+    cin>>ch;
+    if(ch>='a'&&ch<='z')
+        cout<<"Lowercase"<<endl;
+    else if(ch>='A'&&ch<='Z')
+        cout<<"Upper case"<<endl;
+    return 0;
+}
+
+
+
+
+2.
+Enter n:4
+A B C D
+A B C D
+A B C D
+A B C 
+
+code:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    char ch;
+    cout<<"Enter n:";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        ch='A';
+        for(int j=0;j<n;j++)
+        {
+            cout<<ch<<" ";
+            ch++;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
+3.
+Enter n:3
+1 2 3
+4 5 6
+7 8 9
+
+code:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    int a=1;
+    cout<<"Enter n:";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<a<<" ";
+            a++;
+        }
+
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
+4.
+Enter n:4
+1
+1 2
+1 2 3
+1 2 3 4
+
+code:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter n:";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<j+1<<" ";
+        }
+
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
+
+5.Floyd's Triangle Pattern:
+Enter n:4
+1
+2 3
+4 5 6
+7 8 9 10
+code:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter n:";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+          static int  p=j;
+            cout<<p+1<<" ";
+            p++;
+        }
+
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
