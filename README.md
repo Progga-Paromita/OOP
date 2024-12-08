@@ -1,2 +1,2 @@
 # OOP
-C++
+OOP in C++
